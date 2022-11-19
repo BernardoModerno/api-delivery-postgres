@@ -7,7 +7,7 @@ const cors = require('cors');
 const passport = require('passport');
 
 /*
-* RUTAS
+* ROTAS
 */
 const users = require('./routes/usersRoutes');
 
@@ -36,7 +36,7 @@ app.set('port', port);
 */
 users(app);
 
-server.listen(3000, '192.168.1.12' || 'localhost', function() {
+server.listen(3000, '172.24.0.1' || 'localhost', function() {
     console.log('Aplicação de NodeJS ' + port + ' Iniciada...')
 });
 
